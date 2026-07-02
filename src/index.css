@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #ede8de;
+}
+
+.app-shell {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ede8de;
+}
+
+.phone-frame {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  background: #f6f4ef;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  padding: 22px 18px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: -6px;
+}
+
+.app-title {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #16433d;
+  line-height: 1.1;
+}
+
+.app-subtitle {
+  font-size: 11.5px;
+  color: #8a8172;
+  margin-top: 2px;
+}
+
+.tab-switcher {
+  display: flex;
+  margin: 0 18px 8px;
+  background: #ede8de;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  color: #5c6f69;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 9px 0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.tab-btn-active {
+  background: #16433d;
+  color: #f6f4ef;
+}
+
+.screen-padding {
+  padding: 4px 18px 28px;
+}
+
+.section-label {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  color: #5c6f69;
+  margin: 10px 0 14px;
+  text-transform: uppercase;
+}
+
+/* Doctor list */
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doctor-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #e6e1d6;
+  box-shadow: 0 1px 2px rgba(22, 67, 61, 0.04);
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #16433d;
+  color: #f6f4ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.doctor-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.doctor-name {
+  font-family: Georgia, serif;
+  font-size: 15.5px;
+  color: #16433d;
+  font-weight: 700;
+}
+
+.doctor-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.specialization-tag {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #f6f4ef;
+  background: #4a4063;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fbf3e1;
+  color: #8a6414;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.doctor-meta {
+  font-size: 11.5px;
+  color: #8a8172;
+  margin-top: 4px;
+}
+
+/* Buttons */
+.btn-primary {
+  border: none;
+  background: #16433d;
+  color: #f6f4ef;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-small {
+  font-size: 12.5px;
+  padding: 9px 13px;
+  flex-shrink: 0;
+}
+
+.btn-outline {
+  border: 1.5px solid #16433d;
+  background: transparent;
+  color: #16433d;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding: 12px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.btn-accent {
+  border: none;
+  background: #d9a441;
+  color: #16433d;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 13px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Form */
+.field {
+  margin-bottom: 14px;
+}
+
+.field-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5c6f69;
+  margin-bottom: 6px;
+}
+
+.text-input {
+  width: 100%;
+  border: 1.5px solid #e6e1d6;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  color: #2e2b27;
+  background: #ffffff;
+  outline: none;
+}
+
+.slot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.slot-btn {
+  border: 1.5px solid #e6e1d6;
+  background: #ffffff;
+  color: #4a4340;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 8px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.slot-btn-active {
+  border-color: #16433d;
+  background: #16433d;
+  color: #f6f4ef;
+}
+
+.error-text {
+  color: #b23b2e;
+  font-size: 12.5px;
+  margin: 4px 0 6px;
+}
+
+/* Confirmation */
+.confirmation-card {
+  background: #16433d;
+  border-radius: 18px;
+  padding: 26px 22px;
+  color: #f6f4ef;
+}
+
+.confirmation-check {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #d9a441;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.confirmation-title {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.confirmation-subtitle {
+  font-size: 12.5px;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.confirmation-details {
+  margin-top: 20px;
+  border-top: 1.5px dashed rgba(246, 244, 239, 0.35);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 13.5px;
+}
+
+.confirm-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.confirm-label {
+  opacity: 0.65;
+}
+
+.confirm-value {
+  font-weight: 600;
+  text-align: right;
+}
