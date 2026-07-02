@@ -1,0 +1,7 @@
+[
+  { "id": "d1", "name": "Dr. Aisha Kulkarni", "specialization": "Dermatologist", "rating": 4.8, "experience": "9 yrs", "fee": 700 },
+  { "id": "d2", "name": "Dr. Rohan Mehta", "specialization": "Cardiologist", "rating": 4.6, "experience": "14 yrs", "fee": 1200 },
+  { "id": "d3", "name": "Dr. Simran Kaur", "specialization": "Pediatrician", "rating": 4.9, "experience": "7 yrs", "fee": 600 },
+  { "id": "d4", "name": "Dr. Arjun Nair", "specialization": "Orthopedic", "rating": 4.5, "experience": "11 yrs", "fee": 900 },
+  { "id": "d5", "name": "Dr. Fatima Sheikh", "specialization": "General Physician", "rating": 4.7, "experience": "5 yrs", "fee": 500 }
+]
